@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./responsive.css">
+<link rel="shortcut icon" href="./assets/youtube-browser-icon.svg" type="image/x-icon">
+    <title>YouTube Clone</title>
+</head>
+<body>
+    <!-- This section is all navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <i class="material-icons" id="menu">
+                menu
+            </i>
+            <a href="" class="youtube-home">
+                <img src="./assets/YouTube-Logo.png" alt="youtube logo" id="logo-png">
+            </a>
+        </div>
+        <div class="searchbar">
+            <div class="search">
+            <input type="text" class="search-input" placeholder="Search">
+            <button class="initiate-search">
+                <i class="material-icons">
+                search
+                </i>
+            </button>
+            </div>
+            <button class="voice">
+            <i class="material-icons">
+                mic
+            </i>
+            </button>
+        </div>
+        <div class="navigation">
+                <i class="material-icons">
+                    video_call
+                </i>
+                <i class="material-icons">
+                    apps
+                </i>
+                    <i class="material-icons">
+                        notifications
+                    </i>
+                        <i class="material-icons">
+                            account_circle
+                        </i>
+        </div>
+    </div>
+        <!-- This section is main body content - OPEN -->
+    <div class="mainbody">
+        <div class="categories">
+            <div class="category-section">
+                <!-- divider -->
+                <span class="category active">
+                    <i class="material-icons">
+                        home
+                        </i>
+                    Home
+                </span>
+                <span class="category">
+                    <i class="material-icons">
+                        explore
+                        </i>
+                    Explore
+                </span>
+                <span class="category">
+                    <i class="material-icons">
+                        video_camera_front
+                        </i>
+                    Shorts
+                </span>
+                <span class="category">
+                    <i class="material-icons">
+                        subscriptions
+                        </i>
+                    Subscriptions
+                </span>
+            </div>
+                <div class="category-section">
+                <span class="category">
+                    <i class="material-icons">
+                        video_library
+                        </i>
+                    Library
+                </span>
+                <span class="category">
+                    <i class="material-icons">
+                        history
+                        </i>
+                    History
+                </span>
+                <span class="category">
+                    <i class="material-icons">
+                        slideshow
+                        </i>
+                    Your videos
+                </span>
+                <span class="category">
+                    <i class="material-icons">
+                        schedule
+                        </i>
+                    Watch later
+                </span>
+                <span class="category">
+                    <i class="material-icons">
+                        thumb_up
+                        </i>
+                    Liked videos
+                </span>
+            </div>
+            <div class="category-section">
+                <h3 class="category-heading">
+                    SUBSCRIPTIONS
+                </h3>
+                <span class="category">
+                   <img src="https://yt3.ggpht.com/E92ZPccJE6-2cL1iijMBU3Vth5VSbcQoxtGVBncYmOdDAlDEPpytXtmZl0TZ0O4iOz6cEOw10w=s68-c-k-c0x00ffffff-no-rj" alt="">
+                    Natasha Vilaseca
+                </span>
+                <span class="category">
+                    <img src="https://yt3.ggpht.com/ytc/AKedOLS4haYoyqKggAzozKftEiLq4ptx9G0BCLfZ_XuemQ=s88-c-k-c0x00ffffff-no-rj" alt="">
+                    Christopher Tin
+                </span>
+                <span class="category">
+                    <img src="https://yt3.ggpht.com/VzP8lL_WZ5pp28Oxami_XMqxhBcX2gYU4OP7CIodkPgyoJc5e1PAz8mNt6KxREqMDAwLbVbfi2w=s88-c-k-c0x00ffffff-no-rj" alt="">
+                    Nic Lynn
+                </span>
+                <span class="category">
+                    Browse channels
+                </span>
+            </div>
+            <div class="category-section">
+                <h3 class="category-heading">
+                    MORE FROM YOUTUBE
+                </h3>
+                <span class="category">
+                    <i class="material-icons">
+                        smart_display
+                        </i>
+                    Youtube Premium
+                </span>
+                <span class="category">
+                    <i class="material-icons">
+                        sports_esports
+                        </i>
+                    Gaming
+                </span>
+                <span class="category">
+                    <i class="material-icons">
+                        podcasts
+                        </i>
+                    Live
+                </span>
+                <span class="category">
+                    <i class="material-icons">
+                        sports_football
+                        </i>
+                    Sport
+                </span>
+            </div>
+            <div class="category-section">
+                <span class="category">
+                    <i class="material-icons">
+                        settings
+                        </i>
+                    Settings
+                </span>
+                <span class="category">
+                    <i class="material-icons">
+                        flag
+                        </i>
+                    Report history
+                </span>
+                <span class="category">
+                    <i class="material-icons">
+                        help
+                        </i>
+                    Help
+                </span>
+                <span class="category">
+                    <i class="material-icons">
+                        sms_failed
+                        </i>
+                    Send feedback
+                </span>
+            </div>
+        <div class="categories-footer">
+        <div class="footer-section">
+            <span>
+                About
+            </span>
+            <span>
+                Press
+            </span>
+            <span>
+                Copyright
+            </span>
+            <span>
+                Contact Us
+            </span>
+            <span>
+                Creator
+            </span>
+            <span>
+                Advertise
+            </span>
+            <span>
+                Developers
+            </span>
+        </div>
+        <div class="footer-section">
+            <span>
+                Terms
+            </span>
+            <span>
+                Privacy
+            </span>
+            <span>
+                Policy & Safety
+            </span>
+            <span>
+                How Youtube works
+            </span>
+            <span>
+                Test new features
+            </span>
+        </div>
+        <span class="copyright">
+            2022 Mikejdavo Youtube Clone
+        </span>
+        </div>
+        </div>
+        <div class="videos">
+            <div class="video-grid">
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/-9pS4yEz7jw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCeJqY1SM8760cWbw1GIC_zu-xaLg" alt="">
+                    </div>    
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/eLCADxKBRj3JGsifnxitZwfsbeV3DDlS3r8SzN5QPT2juw0fTV34T09vIZWfEF3D4JmV2z6hZA=s48-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                            <div class="video-details">
+                                <p>Uncle Roger Review Matty Matheson Butter Chicken</p>
+                                <div class="posted-by">
+                                    <span>mrnigelng</span>
+                                    <div class="views-date">
+                                    <span>4.4M Views </span>
+                                    <span>•</span>
+                                    <span>5 months ago</span>
+                                    </div>
+                                   </div>
+                           </div> 
+                        </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/nhIP6dfr_FE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCNe6-XQXWerCXL8TAd87eDB6WZ2g" alt="">
+                    </div>    
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/ytc/AKedOLQ6HZnve3SVPfMlZ1JgntEiC-KBOKK10T16lRjY3w=s68-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                            <div class="video-details">
+                                <p>The Evolution of Knightly Armour - 1066 - 1485 </p>
+                                <div class="posted-by">
+                                    <span>Metatron</span>
+                                    <div class="views-date">
+                                    <span>948k Views </span>
+                                    <span>•</span>
+                                    <span>5 years ago</span>
+                                    </div>
+                                   </div>
+                           </div> 
+                        </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/I0DkkLsvF4o/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDRnyBf-ZXY-Nafq6k9zycaaXIxcg" alt="">
+                    </div>    
+                        <div class="details">
+                            <div class="profile">
+                                <img src="https://yt3.ggpht.com/ytc/AKedOLT4S5f5y52qQM7ikvUIdrG8RudcVvWmjNmcYy8KFw=s68-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                            <div class="video-details">
+                                <p>a RARE PASTA SAUCE I ate weekly when I lived in Italy</p>
+                                <div class="posted-by">
+                                    <span>NOT ANOTHER COOKING SHOW</span>
+                                    <div class="views-date">
+                                    <span>3.3M Views </span>
+                                    <span>•</span>
+                                    <span>11 months ago</span>
+                                    </div>
+                                   </div>
+                           </div> 
+                        </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/HNziOoXDBeg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCfea4_8Dep1egEvOvUx5dhd8UtjQ" alt="">
+                    </div>    
+                        <div class="details">
+                            <div class="profile">
+                               <img src="https://yt3.ggpht.com/ytc/AKedOLRBqavdIQheHC8Czt6AfARUljVKo2DU9DN8_xqXNg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                                <div class="video-details">
+                                    <p>Scammers wanted $3,000. They watched me spend it all</p>
+                                    <div class="posted-by">
+                                        <span>kitboga</span>
+                                        <div class="views-date">
+                                        <span>732k Views </span>
+                                        <span>•</span>
+                                        <span>7 months ago</span>
+                                        </div>
+                                       </div>
+                               </div> 
+                               
+                        </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/z9L6eSfave0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDhdJwKG4wtkBHvw5fB-MI9xDOnwg" alt="">
+                    </div>    
+                        <div class="details">
+                            <div class="profile">
+                               <img src="https://yt3.ggpht.com/E92ZPccJE6-2cL1iijMBU3Vth5VSbcQoxtGVBncYmOdDAlDEPpytXtmZl0TZ0O4iOz6cEOw10w=s68-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                                <div class="video-details">
+                                    <p>How to use Sales Navigator 2022</p>
+                                    <div class="posted-by">
+                                        <span>Natasha Vilaseca</span>
+                                        <div class="views-date">
+                                        <span>422K Views </span>
+                                        <span>•</span>
+                                        <span>5 months ago</span>
+                                        </div>
+                                       </div>
+                               </div> 
+                               
+                        </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/c4t7JnCW-48/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAvbSG8WVRGWfBfdo3rb31xbuXEug" alt="">
+                    </div>    
+                        <div class="details">
+                            <div class="profile">
+                               <img src="https://yt3.ggpht.com/ytc/AKedOLSa0_hSMv21A3SfQ6eJMDq5rDbjm_qeEtrwqY5DGA=s68-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                                <div class="video-details">
+                                    <p>Overpowered from side quests</p>
+                                    <div class="posted-by">
+                                        <span>Viva La Dirt League</span>
+                                        <div class="views-date">
+                                        <span>2.2M Views </span>
+                                        <span>•</span>
+                                        <span>1 month ago</span>
+                                        </div>
+                                       </div>
+                               </div> 
+                               
+                        </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/dQUA-thz0aM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD8FadyYUcoJ-dm0KTsXsprMgP9aQ" alt="">
+                    </div>    
+                        <div class="details">
+                            <div class="profile">
+                               <img src="https://yt3.ggpht.com/ytc/AKedOLSv2dbaVnFaBXwSFUr-NSoUuaEhLbZUNVSNfINq=s68-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                                <div class="video-details">
+                                    <p>Relaxing Music for Focus</p>
+                                    <div class="posted-by">
+                                        <span>turtleman</span>
+                                        <div class="views-date">
+                                        <span>1.7M Views </span>
+                                        <span>•</span>
+                                        <span>2 years ago</span>
+                                        </div>
+                                       </div>
+                               </div> 
+                               
+                        </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/gba6aUHIJXA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBj0Ery-pB2S5p_ybyfXTIwjbYqLw" alt="">
+                    </div>    
+                        <div class="details">
+                            <div class="profile">
+                               <img src="https://yt3.ggpht.com/ytc/AKedOLR4kXAdb56E6iNJzd3IjUMqDidgdDZIaBn6Utz5=s68-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                                <div class="video-details">
+                                    <p>Rebuilding the Great American Hotel continues!</p>
+                                    <div class="posted-by">
+                                        <span>Ghost Town Living</span>
+                                        <div class="views-date">
+                                        <span>123K Views </span>
+                                        <span>•</span>
+                                        <span>1 week ago</span>
+                                        </div>
+                                       </div>
+                               </div> 
+                               
+                        </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/gnk89W8auoY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC-oNEs4lpUgoM4L-54Ggq_0vKVCQ" alt="">
+                    </div>    
+                        <div class="details">
+                            <div class="profile">
+                               <img src="https://yt3.ggpht.com/eU1vd3kWNHmftAOaZTl2qEmWuUBVDH5VXIEO84ANuWrbv2GUgIp7reLu8jbRgKUjllQtyl7r-Hk=s68-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                                <div class="video-details">
+                                    <p>Crafting a complete and comfortable survival shelter</p>
+                                    <div class="posted-by">
+                                        <span>Cyprien Outdoor Adventures</span>
+                                        <div class="views-date">
+                                        <span>18M Views </span>
+                                        <span>•</span>
+                                        <span>4 months ago</span>
+                                        </div>
+                                       </div>
+                               </div> 
+                               
+                        </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/5Fq6PQl7fr8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCp38lIZwocEm79wOSNZGgje6Lbyw" alt="">
+                    </div>    
+                        <div class="details">
+                            <div class="profile">
+                               <img src="https://yt3.ggpht.com/ytc/AKedOLS5nGmuLgpVbUKG2mUlvh9AiHd5rRl3b15wbt0T2g=s68-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                                <div class="video-details">
+                                    <p>Growing Tomatoes with 94% Less Water and No Soil</p>
+                                    <div class="posted-by">
+                                        <span>ABC Science</span>
+                                        <div class="views-date">
+                                        <span>1.7M Views </span>
+                                        <span>•</span>
+                                        <span>1 year ago</span>
+                                        </div>
+                                       </div>
+                               </div> 
+                               
+                        </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/3MoiMCWhGuw/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDcTMDd9K9-9NmQjCK1M35hYbnrNw" alt="">
+                    </div>    
+                        <div class="details">
+                            <div class="profile">
+                               <img src="https://yt3.ggpht.com/ytc/AKedOLSMQsF6EW5Rxf2ewke877fDs4RU25gpn5k-yYlr1u0=s68-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                                <div class="video-details">
+                                    <p>GSP teaches Lex Fridman how to street fight</p>
+                                    <div class="posted-by">
+                                        <span>Lex Fridman</span>
+                                        <div class="views-date">
+                                        <span>1.5M Views </span>
+                                        <span>•</span>
+                                        <span>6 months ago</span>
+                                        </div>
+                                       </div>
+                               </div> 
+                               
+                        </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/lJ5TOZe3WF8/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB2rf-Ue9oCz6vJGyvuNZ9p9Li0xQ" alt="">
+                    </div>    
+                        <div class="details">
+                            <div class="profile">
+                               <img src="https://yt3.ggpht.com/HpbTU16qRa25us3SKwV5i3UTnXGpTeeRxjWq5XjqiLb6fjOreZh_K5z75ZRjiBM_Pz-gJB9lMP0=s68-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                                <div class="video-details">
+                                    <p>Nothing tastier than homemade chicken</p>
+                                    <div class="posted-by">
+                                        <span>Wilderness Cooking</span>
+                                        <div class="views-date">
+                                        <span>17M Views </span>
+                                        <span>•</span>
+                                        <span>2 months ago</span>
+                                        </div>
+                                       </div>
+                               </div> 
+                               
+                        </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/vZA31GMOtZE/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMo3b-vTAdF1lwJBTuUtYLauP1Xg" alt="">
+                    </div>    
+                        <div class="details">
+                            <div class="profile">
+                               <img src="https://yt3.ggpht.com/ytc/AKedOLSBmvFZskn7m4xBgpwjC1L1eQQJgg23XxPDQnZM=s68-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                                <div class="video-details">
+                                    <p>Fix Your Poster with Calisthenics</p>
+                                    <div class="posted-by">
+                                        <span>Hybrid Calisthenics</span>
+                                        <div class="views-date">
+                                        <span>1.8M Views </span>
+                                        <span>•</span>
+                                        <span>2 years ago</span>
+                                        </div>
+                                       </div>
+                               </div> 
+                               
+                        </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/m2jzfVF7noA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC5GQ4ceZ-R7KFO0-uNrok21CGvLw" alt="">
+                    </div>    
+                        <div class="details">
+                            <div class="profile">
+                               <img src="https://yt3.ggpht.com/ytc/AKedOLS4haYoyqKggAzozKftEiLq4ptx9G0BCLfZ_XuemQ=s88-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                                <div class="video-details">
+                                    <p>Christopher Tin: Live at Llangollen</p>
+                                    <div class="posted-by">
+                                        <span>Cristopher Tin</span>
+                                        <div class="views-date">
+                                        <span>441K Views </span>
+                                        <span>•</span>
+                                        <span>4 years ago</span>
+                                        </div>
+                                       </div>
+                               </div> 
+                               
+                        </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/GXI0l3yqBrA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBw2GpqyAiDXpp9EWPKOQcdb-e2Qw" alt="">
+                    </div>    
+                        <div class="details">
+                            <div class="profile">
+                               <img src="https://yt3.ggpht.com/dBwhvX2iF121h0UWumMKi5_4cPclBTKIdIm3KM9KroRUcLWrLkppDf67dIDH-i_YrBAupazR=s68-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                                <div class="video-details">
+                                    <p>Adam | Unity</p>
+                                    <div class="posted-by">
+                                        <span>Unity</span>
+                                        <div class="views-date">
+                                        <span>45M Views </span>
+                                        <span>•</span>
+                                        <span>6 years ago</span>
+                                        </div>
+                                       </div>
+                               </div> 
+                               
+                        </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/Iu8ZmhRphSU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDjIE7bOo_YD6TFizPa8T-iUam3TQ" alt="">
+                    </div>    
+                        <div class="details">
+                            <div class="profile">
+                               <img src="https://yt3.ggpht.com/ytc/AKedOLSx3efmHgHhH4ruftcFK_XykY5XyJ5tKNLI4CsNHQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                                <div class="video-details">
+                                    <p>World's Fastest Workers!</p>
+                                    <div class="posted-by">
+                                        <span>Beast Reacts</span>
+                                        <div class="views-date">
+                                        <span>36M Views </span>
+                                        <span>•</span>
+                                        <span>6 months ago</span>
+                                        </div>
+                                       </div>
+                               </div> 
+                               
+                        </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/leHvmVWL8iA/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBg-r_3JrMK0rymOD8hEoAXdCYiFA" alt="">
+                    </div>    
+                        <div class="details">
+                            <div class="profile">
+                               <img src="https://yt3.ggpht.com/ytc/AKedOLTa5fCTTWxc59H6GP4-KHi4YsxI6uK0PYsjz0V2-A=s68-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                                <div class="video-details">
+                                    <p>15 Things Humans Were Never Meant To See</p>
+                                    <div class="posted-by">
+                                        <span>Top Generality</span>
+                                        <div class="views-date">
+                                        <span>4.9M Views </span>
+                                        <span>•</span>
+                                        <span>4 months ago</span>
+                                        </div>
+                                       </div>
+                               </div> 
+                               
+                        </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/XXYlFuWEuKI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCQEdiUr51iQlcvWUjdS9EFwNUS8Q" alt="">
+                    </div>    
+                        <div class="details">
+                            <div class="profile">
+                               <img src="https://yt3.ggpht.com/QiI-c4cFyRPD0qVwTQooC3dlgJqHA_t6CpEAv818om-mqL9bqNDL4L_qXQVXx_eY76D_7cLD=s88-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                                <div class="video-details">
+                                    <p>The Weeknd - Save Your Tears</p>
+                                    <div class="posted-by">
+                                        <span>The Weeknd</span>
+                                        <div class="views-date">
+                                        <span>884M Views </span>
+                                        <span>•</span>
+                                        <span>1 year ago</span>
+                                        </div>
+                                       </div>
+                               </div> 
+                               
+                        </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/6clPz69FuoQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB4h-LEW8Wm4CsrcUyoNikJJHBLCQ" alt="">
+                    </div>    
+                        <div class="details">
+                            <div class="profile">
+                               <img src="https://yt3.ggpht.com/Zx6PNwDFgEErJ3AHupDp53T6GAhl0ErL7fRNIvB6LkjKME64tttlhZEzQeCv_tRaodRpJhgx=s68-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                                <div class="video-details">
+                                    <p>baby Shark answering the call</p>
+                                    <div class="posted-by">
+                                        <span>Fabricio Rabachim</span>
+                                        <div class="views-date">
+                                        <span>55M Views </span>
+                                        <span>•</span>
+                                        <span>1 year ago</span>
+                                        </div>
+                                       </div>
+                               </div> 
+                               
+                        </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/SKNCTXEYi48/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDHO00cjxS_COeMey-NqLSiXdkhJw" alt="">
+                    </div>    
+                        <div class="details">
+                            <div class="profile">
+                               <img src="https://yt3.ggpht.com/ytc/AKedOLSSIAi_Jh2tejS0M5eUPcNVfeXLWZljMp93V2-rwA=s68-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                                <div class="video-details">
+                                    <p>Here's How McDonald's French Fries Are Made.</p>
+                                    <div class="posted-by">
+                                        <span>#Mind Warehouse</span>
+                                        <div class="views-date">
+                                        <span>10M Views </span>
+                                        <span>•</span>
+                                        <span>9 months ago</span>
+                                        </div>
+                                       </div>
+                               </div> 
+                               
+                        </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/iOcN0IuJVCk/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCkkOhX54OxSjBLP39eyxiRGH8BSg" alt="">
+                    </div>    
+                        <div class="details">
+                            <div class="profile">
+                               <img src="https://yt3.ggpht.com/ytc/AKedOLTVxy2YwZl-yi1Vaa2IXe1RxiAgmKvWeTSC8WQGxg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                                <div class="video-details">
+                                    <p>Squid Game Parody - Season 2 | Ep. 1</p>
+                                    <div class="posted-by">
+                                        <span>Dtay Known</span>
+                                        <div class="views-date">
+                                        <span>9.8 M views</span>
+                                        <span>•</span>
+                                        <span>4 months ago</span>
+                                        </div>
+                                       </div>
+                               </div> 
+                               
+                        </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/zySUlGXbXvA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAZptrJgu2j64oleNvcIOlbuXDOZQ" alt="">
+                    </div>    
+                        <div class="details">
+                            <div class="profile">
+                               <img src="https://yt3.ggpht.com/ytc/AKedOLSx3efmHgHhH4ruftcFK_XykY5XyJ5tKNLI4CsNHQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                                <div class="video-details">
+                                    <p>World's Luckiest People!</p>
+                                    <div class="posted-by">
+                                        <span>Beast Reacts</span>
+                                        <div class="views-date">
+                                        <span>45M Views </span>
+                                        <span>•</span>
+                                        <span>6 months ago</span>
+                                        </div>
+                                       </div>
+                               </div> 
+                               
+                        </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/MFcSw2tEIPQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCi6zpIkS44RKMwBqA4V2V6EEzHcg" alt="">
+                    </div>    
+                        <div class="details">
+                            <div class="profile">
+                               <img src="https://yt3.ggpht.com/3lJOjZj765cq1YqdUYVRaWC1VKJR_uO5s8pmGW8pa2a0GzNGGfKAHpib5jimS0BJTprEZHDP0g=s68-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                                <div class="video-details">
+                                    <p>10 Most Dangerous Holes on Planet Earth</p>
+                                    <div class="posted-by">
+                                        <span>Facts Junkie</span>
+                                        <div class="views-date">
+                                        <span>4.4M Views </span>
+                                        <span>•</span>
+                                        <span>7 months ago</span>
+                                        </div>
+                                       </div>
+                               </div> 
+                               
+                        </div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/y7ENQl2Ers0/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBlBJUS8y95qSx13Rwtu0IhhvPQQw" alt="">
+                    </div>    
+                        <div class="details">
+                            <div class="profile">
+                               <img src="https://i.ytimg.com/vi/y7ENQl2Ers0/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBlBJUS8y95qSx13Rwtu0IhhvPQQw" alt="">
+                            </div>
+                                <div class="video-details">
+                                    <p>Slingshot Design 18</p>
+                                    <div class="posted-by">
+                                        <span>DIY Crossbow</span>
+                                        <div class="views-date">
+                                        <span>6.2M Views </span>
+                                        <span>•</span>
+                                        <span>1 month ago</span>
+                                        </div>
+                                       </div>
+                               </div> 
+                               
+                        </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
